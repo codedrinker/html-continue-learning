@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<script type="text/javascript">
+var myVideo = document.getElementById("video1");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
+}
+
+function makeBig() {
+    myVideo.width = 560;
+}
+
+function makeSmall() {
+    myVideo.width = 320;
+}
+
+function makeNormal() {
+    myVideo.width = 420;
+}
+</script>
+
+<body>
+    <div style="text-align:center;">
+        <button onclick="playPause()">play</button>
+        <button onclick="makeBig()">bit</button>
+        <button onclick="makeNormal()">normal</button>
+        <button onclick="makeSmall()">small</button>
+        <br />
+        <video id="video1" controls="controls" autoplay="autoplay" loop="loop">
+            <source src="http://www.w3school.com.cn/i/movie.ogg" type="video/ogg" />
+            <source src="http://www.w3school.com.cn/i/movie.mp4" type="video/mp4" /> Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+
+</html>

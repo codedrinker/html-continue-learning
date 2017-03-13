@@ -1,4 +1,4 @@
-MyHTML5
+html continue learning
 =======
 
-My HTML5 Demo
+daily html demo

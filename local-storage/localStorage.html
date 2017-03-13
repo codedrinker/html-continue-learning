@@ -1,0 +1,15 @@
+<script>
+localStorage.otherUid = "s:1856265441"
+if (window.localStorage) {
+    window.localStorage.setItem("name", "test-OK"); //´æ
+    var name = window.localStorage.getItem("name"); //È¡
+    window.localStorage.removeItem("name"); //É¾
+} else {
+    throw "LocalStorage not available.";
+}
+</script>
+<html>
+
+<body onload="alert(localStorage.otherUid)"></body>
+
+</html>
